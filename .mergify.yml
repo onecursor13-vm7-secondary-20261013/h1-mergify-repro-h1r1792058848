@@ -1,13 +1,10 @@
-pull_request_rules:
-  - name: h1-automatic-merge-h1r1792058848
-    conditions:
-      - base = h1-protected-h1r1792058848
-    actions:
-      merge:
-        method: merge
+merge_protections_settings:
+  reporting_method: check-runs
+  post_comment: true
+
 merge_protections:
-  - name: h1-owner-review-h1r1792058848
+  - name: VM7 shared source initial title authorization 261016
     if:
-      - base = h1-protected-h1r1792058848
+      - base = main
     success_conditions:
-      - approved-reviews-by = onecursor13-vm7-secondary-20261013
+      - title = VM7_EXTENDS_INITIAL_ALLOW_261016
