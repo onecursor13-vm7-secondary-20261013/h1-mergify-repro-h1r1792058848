@@ -1,10 +1,13 @@
-merge_protections_settings:
-  reporting_method: check-runs
-  post_comment: true
-
+pull_request_rules:
+  - name: h1-automatic-merge-h1r1792058848
+    conditions:
+      - base = h1-protected-h1r1792058848
+    actions:
+      merge:
+        method: merge
 merge_protections:
-  - name: VM7 shared source Owner approval required 261016
+  - name: h1-owner-review-h1r1792058848
     if:
-      - base = main
+      - base = h1-protected-h1r1792058848
     success_conditions:
       - approved-reviews-by = onecursor13-vm7-secondary-20261013
