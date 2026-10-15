@@ -3,8 +3,8 @@ merge_protections_settings:
   post_comment: true
 
 merge_protections:
-  - name: VM7 shared source initial title authorization 261016
+  - name: VM7 shared source Owner approval required 261016
     if:
       - base = main
     success_conditions:
-      - title = VM7_EXTENDS_INITIAL_ALLOW_261016
+      - approved-reviews-by = onecursor13-vm7-secondary-20261013
