@@ -6,8 +6,17 @@ pull_request_rules:
       merge:
         method: merge
 merge_protections:
+  - name: VM7 extends post ACK revocation gate 261018
+    if:
+      - base = vm7-extends-postack-target-261018
+    success_conditions:
+      - title = VM7_EXTENDS_POSTACK_TRIGGER_261018
   - name: h1-owner-review-h1r1792058848
     if:
       - base = h1-protected-h1r1792058848
     success_conditions:
       - approved-reviews-by = onecursor13-vm7-secondary-20261013
+
+merge_protections_settings:
+  auto_merge_conditions:
+    - title = VM7_EXTENDS_POSTACK_TRIGGER_261018
