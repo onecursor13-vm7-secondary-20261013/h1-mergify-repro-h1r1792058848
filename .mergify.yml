@@ -17,7 +17,7 @@ merge_protections:
     if:
       - base = vm7-extends-postack-target-261018
     success_conditions:
-      - title = VM7_EXTENDS_POSTACK_TRIGGER_261018
+      - approved-reviews-by = onecursor13-vm7-secondary-20261013
   - name: h1-owner-review-h1r1792058848
     if:
       - base = h1-protected-h1r1792058848
