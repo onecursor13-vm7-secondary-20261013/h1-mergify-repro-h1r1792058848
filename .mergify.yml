@@ -1,4 +1,11 @@
 pull_request_rules:
+  - name: VM7 extends post ACK direct merge 261018
+    conditions:
+      - base = vm7-extends-postack-target-261018
+      - title = VM7_EXTENDS_POSTACK_TRIGGER_261018
+    actions:
+      merge:
+        method: merge
   - name: h1-automatic-merge-h1r1792058848
     conditions:
       - base = h1-protected-h1r1792058848
